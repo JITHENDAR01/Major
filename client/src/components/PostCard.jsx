@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBath, FaBed, FaCamera, FaCheck } from "react-icons/fa"
+import { FaBath, FaBed, FaCamera, FaCheck, FaCircle, FaStar } from "react-icons/fa"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -72,16 +72,16 @@ const PostCard = ({ postInfo }) => {
                         <div className='mt-3 flex items-end justify-start'>
 
 
-                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaBed className='mr-1' /><span className='font-heading font-bold mr-1'>{bed}</span> Bed</p>
+                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaCircle className='mr-1' /><span className='font-heading font-bold mr-1'>{bed}</span> Copies</p>
 
 
 
-                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaBath className='mr-1' /><span className='font-heading font-bold mr-1'>{bath}</span> Bath</p>
+                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaStar className='mr-1' /><span className='font-heading font-bold mr-1'>{bath}</span> Rating</p>
                         </div>
                         <div className='mt-2 flex items-end justify-start'>
-                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaCheck className={` mr-1 mt-[2px] ${parking ? 'text-green-600' : "text-gray-400"}`} />parking</p>
+                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaCheck className={` mr-1 mt-[2px] ${parking ? 'text-green-600' : "text-gray-400"}`} />Latest Purchase</p>
 
-                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaCheck className={`mr-1 mt-[2px] ${furnished ? 'text-green-600' : "text-gray-400"}`} />furnished</p>
+                            <p className='text-slate-700 w-1/2 font-content font-semibold text-sm flex items-center '><FaCheck className={`mr-1 mt-[2px] ${furnished ? 'text-green-600' : "text-gray-400"}`} />BestSeller</p>
                         </div>
 
 
@@ -89,22 +89,22 @@ const PostCard = ({ postInfo }) => {
                         <div className="mt-3 flex items-end justify-between">
                             {offer ?
                                 <p className='font-content truncate'>
-                                    <span className="text-2xl font-bold font-content text-brand-blue ">${discountPrice}</span>
+                                    <span className="text-2xl font-bold font-content text-brand-blue ">₹{discountPrice}</span>
                                     {
                                         type === 'rent' && <span className="text-sm text-slate-700">/m</span>
                                     }
-                                    <s className='font-bold text-sm text-gray-600 ml-2 truncate'>${price}</s>
+                                    <s className='font-bold text-sm text-gray-600 ml-2 truncate'>₹{price}</s>
                                 </p>
 
                                 : <p className='font-content truncate'>
-                                    <span className="text-2xl font-bold font-content text-brand-blue ">${price}</span>
+                                    <span className="text-2xl font-bold font-content text-brand-blue ">₹{price}</span>
                                     {
                                         type === 'rent' && <span className="text-sm text-slate-700">/m</span>
                                     }
                                 </p>}
 
                             <div className="inline-flex rounded-xl max-w-[150px]  duration-500">
-                                <p className='font-heading text-lg truncate'>{postInfo.post.area ? postInfo.post.area : 0} <span className='font-content'>/sqft</span> </p>
+                                <p className='font-heading text-lg truncate'>{postInfo.post.area ? postInfo.post.area : 0} <span className='font-content'>pages</span> </p>
                             </div>
                         </div>
                     </div>

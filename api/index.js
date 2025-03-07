@@ -2,14 +2,14 @@
 import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
-import userRouter from "./api/routes/user.route.js";
-import auth from "./api/routes/auth.route.js";
+import userRouter from "./routes/user.route.js";
+import auth from "./routes/auth.route.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import postRouter from "./api/routes/post.route.js";
-import messageRouter from "./api/routes/message.route.js";
-import conversationRoute from "./api/routes/conversation.route.js";
-import notificatonRoute from "./api/routes/notification.route.js";
+import postRouter from "./routes/post.route.js";
+import messageRouter from "./routes/message.route.js";
+import conversationRoute from "./routes/conversation.route.js";
+import notificatonRoute from "./routes/notification.route.js";
 
 import path from "path";
 import http from "http";

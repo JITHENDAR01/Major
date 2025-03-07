@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { FaBath, FaBed, FaChartArea, FaBookmark  , FaLocationArrow, } from 'react-icons/fa'
+import { FaBath, FaBed, FaChartArea, FaBookmark  , FaLocationArrow, FaStar, FaCircle, } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 import { clearSavedListing, handleLisingRemove, handleSave } from '../redux/saveListing/saveListingSlice';
+import { MdInsertPageBreak } from 'react-icons/md';
 
 const ListingCard = ({ listing }) => {
     const [heart, setHeart] = useState(false);
@@ -90,18 +91,18 @@ const ListingCard = ({ listing }) => {
                         <div className="info_container mt-4 flex items-center truncate">
                             <p
                                 className='font-content text-xs font-bold truncate flex items-center justify-start'>
-                                <FaBed className='mr-1 text-brand-blue' />
-                                {bed} Bed
+                                <FaCircle className='mr-1 text-brand-blue' />
+                                {bed} Copies
                             </p>
                             <p
                                 className='font-content text-xs font-bold truncate flex items-center justify-start ml-4'>
-                                <FaBath className='mr-1 text-brand-blue' />
-                                {bath} Bath
+                                <FaStar className='mr-1 text-brand-blue' />
+                                {bath} Rating
                             </p>
                             <p
                                 className='font-content text-xs font-bold truncate flex items-center justify-start ml-4'>
-                                <FaChartArea className='mr-1 text-brand-blue' />
-                                {area} Area
+                                <MdInsertPageBreak className='text-brand-blue' />
+                                {area} Pages
                             </p>
                         </div>
                     </div>
@@ -113,9 +114,9 @@ const ListingCard = ({ listing }) => {
 
                         <div className="price_container truncate">
                             {offer ?
-                                <p className='text-xl font-content text-brand-blue font-bold  flex items-center justify-start truncate'>${discountPrice} <s className='text-gray-400  text-xs mt-1 ml-1'>${price}</s> </p>
+                                <p className='text-xl font-content text-brand-blue font-bold  flex items-center justify-start truncate'>₹{discountPrice} <s className='text-gray-400  text-xs mt-1 ml-1'>₹{price}</s> </p>
 
-                                : <p className='text-xl font-content text-brand-blue font-bold  flex items-center justify-start truncate'>${price}</p>
+                                : <p className='text-xl font-content text-brand-blue font-bold  flex items-center justify-start truncate'>₹{price}</p>
                             }
                         </div>
                         <div className="footer_btn flex items-center justify-end mr-1">

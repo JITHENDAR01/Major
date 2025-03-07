@@ -231,7 +231,7 @@ const UpdatePost = () => {
                                             <div className="additional_info mt-6 max-w-xs">
 
                                                 <div className="property_type">
-                                                    <p className='font-heading text-black'>Select property type</p>
+                                                    <p className='font-heading text-black'>Select Book type</p>
                                                     <div className="form-control mt-2">
                                                         <label className="label cursor-pointer flex items-center justify-start gap-2">
                                                             <input
@@ -268,7 +268,7 @@ const UpdatePost = () => {
                                                 <div className="property_info mt-3">
                                                     <p className='font-heading text-black'>Genarel Information</p>
                                                     <div className="max-w-[200px] flex items-center justify-between gap-2 mt-2">
-                                                        <span className='label-text font-medium'>Area <small>(sqft)</small></span>
+                                                        <span className='label-text font-medium'>Pages </span>
                                                         <div>
                                                             <input
                                                                 defaultValue={550}
@@ -283,7 +283,7 @@ const UpdatePost = () => {
                                                     </div>
 
                                                     <div className="max-w-[200px] flex items-center justify-between gap-2 mt-2">
-                                                        <span className='label-text font-medium'>Bedrooms</span>
+                                                        <span className='label-text font-medium'>Copies</span>
                                                         <div>
                                                             <input
                                                                 className='border-2 focus:border-brand-blue rounded-md max-w-[84px] min-w-[84px] py-1 px-2 bg-transparent'
@@ -297,7 +297,7 @@ const UpdatePost = () => {
                                                         </div>
                                                     </div>
                                                     <div className="max-w-[200px] flex items-center justify-between gap-2 mt-1">
-                                                        <span className='label-text font-medium'>Bathrooms</span>
+                                                        <span className='label-text font-medium'>Rating</span>
                                                         <div>
                                                             <input
                                                                 className='border-2 focus:border-brand-blue rounded-md max-w-[84px] min-w-[84px]  py-1 px-2 bg-transparent'
@@ -326,7 +326,7 @@ const UpdatePost = () => {
                                                                 {...register('parking')}
                                                             />
 
-                                                            <span className="label-text font-medium" >Parking</span>
+                                                            <span className="label-text font-medium" >Latest Purchase</span>
                                                         </label>
                                                         <label className="label cursor-pointer flex items-center justify-start gap-2">
                                                             <input
@@ -335,7 +335,7 @@ const UpdatePost = () => {
                                                                 className="checkbox w-5 h-5 border-gray-400 rounded-full checked:bg-brand-blue"
                                                                 {...register('furnished')}
                                                             />
-                                                            <span className="label-text font-medium" >Furnished</span>
+                                                            <span className="label-text font-medium" >BestSeller</span>
                                                         </label>
 
                                                         <label className="label cursor-pointer flex items-center justify-start gap-2">
@@ -346,7 +346,7 @@ const UpdatePost = () => {
                                                                 {...register('offer')}
                                                                 onClick={() => setIsoffer(!isOffer)}
                                                             />
-                                                            <span className="label-text font-medium" >Do you have any discount?</span>
+                                                            <span className="label-text font-medium" >Price Negotiable</span>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -355,7 +355,7 @@ const UpdatePost = () => {
                                                 <div className=" mt-1">
                                                     <div className="pricing_info flex flex-col">
                                                         <p className="mt-3  font-heading text-black">Regular Price </p>
-                                                        <span className='text-sm font-content font-bold text-red-900'>($ /month)</span>
+                                                        <span className='text-sm font-content font-bold text-red-900'>(₹)</span>
                                                         <div className="flex flex-row mt-2 ">
                                                             <span className="flex items-center bg-grey-lighter rounded rounded-r-none px-2 font-bold text-grey-darker text-xl">$</span>
                                                             <input
@@ -373,7 +373,7 @@ const UpdatePost = () => {
                                                         isOffer &&
                                                         <div className="pricing_info flex flex-col">
                                                             <p className="mt-3  font-heading text-black">Discount Price </p>
-                                                            <span className='text-sm font-content font-bold text-red-900'>($ /month)</span>
+                                                            <span className='text-sm font-content font-bold text-red-900'>(₹)</span>
                                                             <div className="flex flex-row mt-2 ">
                                                                 <span className="flex items-center bg-grey-lighter rounded rounded-r-none px-2 font-bold text-grey-darker text-xl">$</span>
                                                                 <input

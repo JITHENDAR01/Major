@@ -37,8 +37,8 @@ const Header = () => {
 
                         <h1 className="font-blach sm:text-xl text-sm text-left hover:bg-transparent uppercase text-brand-blue tracking-tighter w-full font-heading font-bold flex items-center justify-start">
                             <Link to={'/home'} className='flex items-center justify-start'>
-                                <img className='w-8 h-8' src="https://img.icons8.com/sf-black-filled/64/313a67/home.png" alt="logo" />
-                                <span className='hidden sm:block'>Property Sale</span>
+                                <img className='w-8 h-8' src="https://img.icons8.com/?size=100&id=41414&format=png&color=191970" alt="logo" />
+                                <span className='hidden sm:block'>BookShelf</span>
                             </Link>
                         </h1>
 
@@ -50,7 +50,7 @@ const Header = () => {
                             <div className="form-control w-full max-w-full   sm:max-w-sm  flex flex-row mx-auto items-center justify-center relative">
                                 <input
                                     type="text"
-                                    placeholder="Explore by area, amenities, or keyword..."
+                                    placeholder="Explore by title, area, or keyword..."
                                     className="search placeholder:text-gray-700"
                                     onChange={(e) => {
                                         dispatch(setSearchTermState(e.target.value)),

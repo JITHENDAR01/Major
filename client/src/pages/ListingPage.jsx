@@ -6,7 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { BsArrowRight, BsArrowLeft, } from "react-icons/bs";
 import { BiSolidArea } from 'react-icons/bi'
-import { FaLocationArrow, FaBed, FaBath, FaAngleUp, FaAngleDown, FaShare, FaLock, FaBookmark } from "react-icons/fa"
+import { FaLocationArrow, FaStar, FaCircle, FaAngleUp, FaAngleDown, FaShare, FaLock, FaBookmark } from "react-icons/fa"
+import { MdInsertPageBreak } from "react-icons/md";
 import Loading from '../components/Loading';
 import { useDispatch, useSelector } from 'react-redux';
 import Contact from '../components/Contact';
@@ -212,13 +213,13 @@ const ListingPage = () => {
                                                 {
                                                     offer ?
                                                         <p className='text-2xl font-heading text-brand-blue mt-5  text-bold'>
-                                                            ${discountPrice} <span>
-                                                                <s className='text-gray-400 text-sm'>${price}</s>
+                                                            ₹{discountPrice} <span>
+                                                                <s className='text-gray-400 text-sm'>₹{price}</s>
                                                             </span>
                                                         </p>
                                                         :
                                                         <p className='text-2xl font-heading text-brand-blue mt-3  text-bold'>
-                                                            ${price}
+                                                            ₹{price}
                                                         </p>
                                                 }
                                             </div>
@@ -226,15 +227,15 @@ const ListingPage = () => {
 
                                             <div className="property_genarel_info grid-cols-3 grid max-w-md">
                                                 <p className='font-heading mt-3 font-medium sm:text-lg  text-sm flex items-center justify-left'>
-                                                    <FaBed className='text-brand-blue' />
-                                                    <span className='ml-1'>{bed} Beds</span>
+                                                    <FaCircle  className='text-brand-blue' />
+                                                    <span className='ml-1'>{bed} Copies</span>
                                                 </p>
                                                 <p className='font-heading mt-3 font-medium sm:text-lg  text-sm flex items-center justify-left'>
-                                                    <FaBath className='text-brand-blue' />
-                                                    <span className='ml-1'>{bath} Bath</span>
+                                                    <FaStar className='text-brand-blue' />
+                                                    <span className='ml-1'>{bath} Rating</span>
                                                 </p>
-                                                <p className='font-heading mt-3 font-medium sm:text-lg text-sm flex items-center justify-left'><BiSolidArea className='text-brand-blue' />
-                                                    <span className='ml-1'>{area} sqft</span>
+                                                <p className='font-heading mt-3 font-medium sm:text-lg text-sm flex items-center justify-left'><MdInsertPageBreak className='text-brand-blue' />
+                                                    <span className='ml-1'>{area} Pages</span>
                                                 </p>
                                             </div>
 
@@ -265,7 +266,7 @@ const ListingPage = () => {
                                                 <div className="info_contaier mt-5 max-w-md ">
                                                     <div className="grid grid-cols-2">
                                                         <p className='font-heading text-md lg:text-lg '>
-                                                            Bedrooms
+                                                            Copies
                                                         </p>
                                                         <p className='font-heading  text-md lg:text-lg '>
                                                             {bed}
@@ -273,7 +274,7 @@ const ListingPage = () => {
                                                     </div>
                                                     <div className="grid grid-cols-2 mt-2">
                                                         <p className='font-heading text-md lg:text-lg '>
-                                                            BathRoom
+                                                            Rating
                                                         </p>
                                                         <p className='font-heading  text-md lg:text-lg '>
                                                             {bath}
@@ -281,7 +282,7 @@ const ListingPage = () => {
                                                     </div>
                                                     <div className="grid grid-cols-2 mt-2">
                                                         <p className='font-heading text-md lg:text-lg '>
-                                                            Parking
+                                                            Latest Purchase
                                                         </p>
                                                         <p className={`font-heading ${parking ? "text-green-600" : "text-gray-400"}  text-md lg:text-lg capitalize`}>
                                                             {
@@ -291,7 +292,7 @@ const ListingPage = () => {
                                                     </div>
                                                     <div className="grid grid-cols-2 mt-2">
                                                         <p className='font-heading text-md lg:text-lg '>
-                                                            Furnished
+                                                            BestSeller
                                                         </p>
                                                         <p className={`font-heading ${furnished ? "text-green-600" : "text-gray-400"}  text-md lg:text-lg capitalize`}>
                                                             {
@@ -301,10 +302,10 @@ const ListingPage = () => {
                                                     </div>
                                                     <div className="grid grid-cols-2 mt-2">
                                                         <p className='font-heading text-md lg:text-lg '>
-                                                            Area
+                                                            Pages
                                                         </p>
                                                         <p className='font-heading  text-md lg:text-lg '>
-                                                            {area} <span>sqft</span>
+                                                            {area} <span></span>
                                                         </p>
                                                     </div>
                                                     {
@@ -314,8 +315,8 @@ const ListingPage = () => {
                                                                 Price
                                                             </p>
                                                             <p className='font-heading  text-md lg:text-2xl '>
-                                                                ${discountPrice} <span>
-                                                                    <s className='text-gray-400 text-lg'>${price}</s>
+                                                                ₹{discountPrice} <span>
+                                                                    <s className='text-gray-400 text-lg'>₹{price}</s>
                                                                 </span>
                                                             </p>
                                                         </div>

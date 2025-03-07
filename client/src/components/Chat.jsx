@@ -304,14 +304,14 @@ const Chat = ({ conversationInfo }) => {
                             <form onSubmit={handleSendMsg}>
                                 <div className="textbar_container  w-full px-5 py-3 flex items-center gap-2">
                                     <div className="attachment_container">
-                                        <BsImage />
+                                        {/* <BsImage /> */}
                                     </div>
                                     <div className="input_container w-full">
                                         <input
                                             onChange={(e) => setTypedMessage(e.target.value)}
                                             value={typedMessage}
                                             type="text"
-                                            placeholder="Aa"
+                                            placeholder="Type here.."
                                             className="w-full px-4 py-1 rounded-full border  placeholder:font-content placeholder:text-sm caret-h-2  bg-[#F0F2F5] caret-brand-blue border-brand-blue focus:outline-none"
                                         />
                                     </div>

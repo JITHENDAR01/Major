@@ -74,7 +74,7 @@ const Login = () => {
                                     </u>
                                 </p>
 
-                                <OAuth />
+                                {/* <OAuth /> */}
                                 <ToastContainer limit={0} />
                             </div>
                         </div>

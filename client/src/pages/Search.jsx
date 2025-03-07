@@ -92,7 +92,7 @@ const Search = () => {
                                     </div>
                                     <div className="feilds_cotainer mt-4">
                                         <div className="feilds max-w-xs">
-                                            <p className='text-lg font-heading '>Property type:</p>
+                                            <p className='text-lg font-heading '>Book type:</p>
                                             <div className="control flex flex-row md:flex-col items-center md:items-start xl:flex-row xl:items-center justify-between mt-1">
                                                 <div>
                                                     <label className="flex items-center justify-start text-lg font-heading">
@@ -145,7 +145,7 @@ const Search = () => {
 
                                             {/* // Amenities Section  */}
                                             <div className="aminities_container mt-4">
-                                                <p className='text-lg font-heading'>Amenities:</p>
+                                                <p className='text-lg font-heading'>Features:</p>
                                                 <div className="control flex flex-row md:flex-col items-center md:items-start xl:flex-row xl:items-center justify-start mt-1">
                                                     <div className='mr-5'>
                                                         <label className="flex items-center justify-start text-lg font-heading">
@@ -156,7 +156,7 @@ const Search = () => {
                                                                 onChange={(e) => handleChange(e.target.name, e.target.checked)}
                                                                 checked={formState.parking}
                                                             />
-                                                            Parking
+                                                            Latest Purchase
                                                         </label>
                                                     </div>
                                                     <div>
@@ -168,7 +168,7 @@ const Search = () => {
                                                                 onChange={(e) => handleChange(e.target.name, e.target.checked)}
                                                                 checked={formState.furnished}
                                                             />
-                                                            Furnished
+                                                            BestSeller
                                                         </label>
                                                     </div>
 

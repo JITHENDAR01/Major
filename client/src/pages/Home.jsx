@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <section
-                className="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat"
+                className="relative bg-[url(https://images.unsplash.com/photo-1616330682546-2468b2d8dd17?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-no-repeat"
             >
                 <div
                     className="absolute inset-0 bg-brand-blue/50 sm:bg-brand-blue/10 sm:bg-gradient-to-r sm:from-brand-blue/70 sm:to-white/5"
@@ -22,16 +22,18 @@ const Home = () => {
                     className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
                 >
                     <div className="max-w-xl text-center sm:text-left">
-                        <h1 className="text-3xl font-extrabold sm:text-5xl xl:text-6xl font-heading  text-white sm:text-left">
-                            Let us find your
+                    <h1 className="text-3xl font-extrabold sm:text-5xl xl:text-6xl font-heading text-white sm:text-left">
+    Let your next Read
 
-                            <strong className="block font-extrabold bg-white mt-2 text-brand-blue max-w-xs mx-auto sm:ml-0 sm:mr-auto sm:max-w-md font-oswald uppercase sm:text-left xl:max-w-3xl">
-                                Forever Home.
-                            </strong>
-                        </h1>
+    <strong className="block font-extrabold mt-4 text-brand-blue max-w-xs mx-auto sm:ml-0 sm:mr-auto sm:max-w-md font-oswald uppercase sm:text-left xl:max-w-3xl">
+        <span className="text-white">Find You</span>
+    </strong>
+</h1>
+
+
 
                         <p className="mt-4 max-w-md sm:text-md font-content text-white">
-                            Welcome to our home listings designed for you. Explore to find your perfect match. We're here to make finding your dream home a smooth, enjoyable experience.
+                        Welcome to BookShelf, your go-to place for discovering and trading pre-loved books. Explore, buy, sell, and connect with fellow book lovers for a sustainable reading experience.
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
@@ -63,10 +65,10 @@ const Home = () => {
                     className="mx-auto max-w-screen-xl  space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
                 >
                     <div className="anoucement grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-3 ">
-                        <h2 className='font-oswald uppercase text-3xl text-center sm:text-left sm:text-3xl text-white  font-bold'>Want to sell your property?</h2>
+                        <h2 className='font-oswald uppercase text-3xl text-center sm:text-left sm:text-3xl text-white  font-bold'>Want to sell your Book?</h2>
                         <div className="btn_container flex items-center sm:justify-end justify-center">
                             <button
-                                className="group relative inline-flex items-center overflow-hidden rounded bg-white font-heading  px-8 py-3 text-brand-blue "
+                                className="group relative inline-flex items-center overflow-hidden rounded bg-black font-heading  px-8 py-3 text-brand-blue "
                                 onClick={() => navigate('/create_post')}
                             >
                                 <span className="absolute -end-full transition-all group-hover:end-4">
@@ -106,10 +108,10 @@ const Home = () => {
                     className="mx-auto max-w-screen-xl  space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
                 >
                     <div className="anoucement grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-3 ">
-                        <h2 className='font-oswald uppercase text-3xl text-center sm:text-left sm:text-3xl text-white  font-bold'>Ready to rent your dream property?</h2>
+                        <h2 className='font-oswald uppercase text-3xl text-center sm:text-left sm:text-3xl text-white  font-bold'>Want to rent your favorite read?</h2>
                         <div className="btn_container flex items-center sm:justify-end justify-center">
                             <button
-                                className="group relative inline-flex items-center overflow-hidden rounded bg-white font-heading  px-8 py-3 text-brand-blue "
+                                className="group relative inline-flex items-center overflow-hidden rounded bg-black font-heading  px-8 py-3 text-brand-blue "
                                 onClick={() => navigate('/search')}
                             >
                                 <span className="absolute -end-full transition-all group-hover:end-4">

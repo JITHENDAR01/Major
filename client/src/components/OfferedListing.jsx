@@ -102,10 +102,10 @@ const OfferedListing = () => {
             >
                 <div className="content">
                     <h2 className='text-3xl font-bold sm:text-5xl font-heading  text-brand-blue sm:text-left '>
-                        Enjoy Our <span className='bg-amber-400 px-1 pb-1'>Exciting Discount</span>
+                        Enjoy with <span className='bg-amber-400 px-1 pb-1'>Exciting Discounts</span>
                     </h2>
                     <p className='font-content  font-medium text-sm sm:text-lg mt-4 max-w-3xl'>
-                        Find Your Perfect Home! Whether you want to rent or buy, we've got great deals for you. Discover comfortable rentals and awesome properties for sale. Your dream home is just a click away!
+                    Find Your Next Great Read! Whether you're buying or selling, BookShelf offers a wide selection of pre-loved books at amazing prices. Your next literary adventure is just a click away!
                     </p>
                 </div>
 
